@@ -3,6 +3,7 @@ title: "Bridging the Divide: Digital Access and Poverty in Sub-Saharan Africa"
 editor: visual
 format:
   html:
+    theme: cosmo
     self-contained: true
     code-fold: true  # Makes code collapsible
     code-hidden: true # Globally hides code by default
@@ -21,13 +22,13 @@ link-citations: true # Makes citations clickable
 
 **Research Question:** How does access to digital infrastructure affect poverty outcomes in Sub-Saharan Africa, and to what extent is this relationship moderated by perceived local corruption?
 
-Extreme poverty is widespread in Sub-Saharan Africa. This project will explore whether digital infrastructure access — in the form of electricity, mobile phones, or computers — is associated with improved poverty outcomes. I will also examine whether this relationship is influenced by levels of institutional corruption.
+Poverty is widespread in Sub-Saharan Africa. This project will explore whether digital infrastructure access — in the form of electricity, mobile phones, or computers — is associated with improved poverty outcomes. I will also examine whether this relationship is influenced by levels of institutional corruption.
 
-Compared to other regions, Africa has high development projections for this coming decade. These projections led me to explore the relationship between corruption and infrastructure, and their effects on poverty outcomes. I realized, however, that in order to make my findings as actionable as possible, I needed to narrow the scope of my project to focus specifically on digital infrastructure.
+Compared to other regions, Africa has high development projections for this coming decade. These projections motivated me to explore the relationship between corruption and infrastructure, and their effects on poverty outcomes. I realized, however, that in order to make my findings as actionable as possible, I needed to narrow the scope of my project to focus specifically on digital infrastructure.
 
 There are several reasons for this choice. Currently, much of the African youth population is deprived of access to digital technologies. In fact, few governments are even investing strategically in developing digital infrastructure, service, skills, and entrepreneurship [@worldbank2024]. The consequences of this digital divide have become more apparent with recent developments in artificial intelligence models. AI models "promise to be a... powerful force for boosting productivity and helping poorer countries overcome shortages of skilled teachers and doctors" [@economist2024]. However, the absence of digital infrastructure prevents people from fully utilizing AI technologies and deriving the same benefits that other people around the world are receiving. This illustrates how digital infrastructure interventions can provide an actionable way to reduce poverty in Sub-Saharan Africa.
 
-The academic literature on this topic is not fully comprehensive. In particular, studies that explored the relationship between technology and poverty varied significantly in scope and design. One study from the Harvard International Review focused particularly on agricultural technology, ultimately finding that it reduces poverty in Sub-Saharan Africa [@li2020]. Another paper by Kanyam et al. found that mobile infrastructure may help reduce corruption but did not focus specifically on poverty as the dependent variable [@kanyam2017].
+The academic literature on this topic is not fully comprehensive. In particular, studies that explored the relationship between technology and poverty varied significantly in scope and design. One study from the Harvard International Review focused particularly on agricultural technology, ultimately finding that it reduces poverty in Sub-Saharan Africa [@li2020]. Another paper by Kanyam et al. found that mobile infrastructure may help reduce corruption, but did not focus specifically on poverty as the dependent variable [@kanyam2017].
 
 However, a 2024 white paper from USAID’s WEE-Connect program more closely resembles my question of interest. It found that digital connectivity, when combined with the ability to access digital services, can help lift households out of poverty — especially by improving access to education, finance, and healthcare [@afrobarometer2022]. This white paper suggested that digital infrastructure has the potential to act as a foundation enabling other poverty-alleviating programs to function.
 
@@ -111,7 +112,7 @@ When selecting variables for the digital infrastructure index, I drew on guidanc
 
 **Poverty Outcomes (DV)**
 
-For the poverty outcome index, I relied on indicators of basic material deprivation — particularly, how often respondents report going without food, water, or cash income. These are drawn from questions Q6a, Q6b, and Q6e in the Afrobarometer survey. Although poverty can be conceptualized in terms of income, wealth, or multidimensional indices, I decided to focus on these frequency-based measures because they are good proxies for each individual's day-to-day circumstances — and are highly relevant to the core hypothesis of this project. This project treats access to food, water, and cash as proxies for poverty in low-income contexts.<br><br>
+For the poverty outcome index, I relied on indicators of basic material deprivation — particularly, how often respondents report going without food, water, or cash income. These are drawn from questions Q6a, Q6b, and Q6e in the Afrobarometer survey. Although poverty can be conceptualized in terms of income, wealth, or multidimensional indices, I decided to focus on these frequency-based measures because they are good proxies for each individual's day-to-day circumstances (and are highly relevant to the core hypothesis of this project). This project treats access to food, water, and cash as proxies for poverty in low-income contexts.<br><br>
 
 -   **Q6a. How often gone without food**
 
@@ -252,7 +253,7 @@ summary_stats %>%
 
 ```
 
-![](images/new summary stats.png){fig-align="center"}
+![](images/new%20summary%20stats.png){fig-align="center"}
 
 The corruption index has a mean of \~0.57 (SD = \~0.23), with values ranging from 0 to 1.\
 
@@ -354,7 +355,7 @@ gt(model_table) %>%
 
 **Regression Output 1:**
 
-![](images/initial regression results.png){fig-align="center"}
+![](images/initial%20regression%20results.png){fig-align="center"}
 
 The table above presents the results of an OLS regression estimating the effects of digital access on poverty levels, while controlling for corruption, education, and urban/rural residence.
 
@@ -435,11 +436,11 @@ gt(model_table_urban) %>%
 
 **Regression Output 2:**
 
-![](images/urban only regression.png){fig-align="center"}
+![](images/urban%20only%20regression.png){fig-align="center"}
 
 **Figure 2: Relationship between Digital Access and Poverty (Urban only)**
 
-![](images/urban only plot.png){fig-align="center"}
+![](images/urban%20only%20plot.png){fig-align="center"}
 
 This empirical extension restricts the sample to urban respondents only — helping provide a focused test of whether the relationship between digital access and poverty holds in urban settings. This is an important extension because urban areas generally offer better access to technology and services. Accounting for this context can provide a more robust sense of whether digital infrastructure truly drives poverty reduction.
 
@@ -469,19 +470,19 @@ The output from the urban-only empirical extension further supports these conclu
 
 Lastly, the statistically insignificant interaction term between digital access and corruption indicates that based on this dataset, the impact of digital access on poverty does not significantly change based on corruption levels. This means that while digital infrastructure can help reduce poverty, its effectiveness is not guaranteed in corrupt environments.
 
-***Policy Recommendations***
+**Policy Recommendations**
 
-Based on these results, there are several policy recommendations that can help improve poverty outcomes in Sub-Saharan Africa. Primarily, governments should aim to **expand digital infrastructure in low-corruption areas**. The regression results indicate that the effect of digital access on poverty is present when corruption is minimal; by prioritizing digital infrastructure development in regions with clean governance, we can expect to see improved poverty outcomes.
+Based on these results, there are several policy recommendations that can help improve poverty outcomes in Sub-Saharan Africa. Primarily, governments should aim to expand digital infrastructure in low-corruption areas. The regression results indicate that the effect of digital access on poverty is present when corruption is minimal; by prioritizing digital infrastructure development in regions with clean governance, we can expect to see improved poverty outcomes.
 
-Additionally, since corruption is shown to consistently worsen poverty — even in urban areas — policies should **aim to improve governance by enforcing transparency and strengthening anti-corruption institutions**. This can be achieved through various measures, whether it's by enforcing term lengths for government leaders (incentivising them to gain the public's favor for re-election purposes) or by ensuring that audits are conducted on government practices (i.e. auditing government expenditures to prevent embezzlement from government-funded projects).
+Additionally, since corruption is shown to consistently worsen poverty — even in urban areas — policies should aim to improve governance by enforcing transparency and strengthening anti-corruption institutions. This can be achieved through various measures, whether it's by enforcing term lengths for government leaders (incentivising them to gain the public's favor for re-election purposes) or by ensuring that audits are conducted on government practices (i.e. auditing government expenditures to prevent embezzlement from government-funded projects).
 
-Finally, based on empirical extension findings (and combining the previous two policy recommendations), governments should also consider **implementing programs that monitor digital infrastructure programs in urban environments**. The empirical extension regression output (regression output 2) showed that corruption can still harm poverty outcomes in urban settings. Policymakers should ensure that urban digital initiatives are effectively monitored and free from corrupt practices, as the regression output demonstrates with statistical significance that digital access reduces poverty in urban settings in the presence of minimal corruption.<br><br>
+Finally, based on empirical extension findings (and combining the previous two policy recommendations), governments should also consider implementing programs that monitor digital infrastructure programs in urban environments. The empirical extension regression output (regression output 2) showed that corruption can still harm poverty outcomes in urban settings. Policymakers should ensure that urban digital initiatives are effectively monitored and free from corrupt practices, as the regression output demonstrates with statistical significance that digital access reduces poverty in urban settings in the presence of minimal corruption.<br><br>
 
-***Conclusion***
+**Conclusion**
 
 In Sub-Saharan Africa, millions of people still lack access to reliable digital infrastructure. However, having access to digital technologies can transform lives — especially given recent developments in artificial intelligence and big data. Digital access has the potential to empower individuals and drive economic growth
 
-This highlights the importance of data-driven development insights. Such insights provide the evidence needed to design targeted development strategies and motivate governments to take meaningful action
+This highlights the importance of data-driven development insights. Such insights provide the evidence needed to design targeted development strategies and motivate governments to take meaningful action.
 
 <br><br>
 
