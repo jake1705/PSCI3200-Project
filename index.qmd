@@ -1,11 +1,7 @@
 ---
-title: "PSCI3200 Project"
+title: "Digital Infrastructure, Poverty, and Development"
 ---
 
-This is a Quarto website.
+Hi, I’m Jake, a senior at the University of Pennsylvania. My research explores how technology—especially digital infrastructure—impacts poverty outcomes in Sub-Saharan Africa, with a focus on the role of institutional corruption.
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
-
-```{r}
-1 + 1
-```
+![](images/digital africaaaa.jpg){fig-align="center"}
