@@ -3,12 +3,11 @@ project:
   output-dir: docs
 
 website:
-  title: "PSCI3200 Project"
+  title: "PSCI-3200"
   navbar:
     left:
       - href: Research Design.qmd
-        text: Home
-      - about.qmd
+        text: Project Details
 
 format:
   html:
