@@ -1,5 +1,0 @@
----
-title: "About"
----
-
-Jake is a senior at the University of Pennsylvania.
