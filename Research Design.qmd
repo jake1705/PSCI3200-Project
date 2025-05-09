@@ -359,7 +359,7 @@ gt(model_table) %>%
 
 ![](images/initial%20regression%20results.png){fig-align="center"}
 
-The table above presents the results of an OLS regression estimating the effects of digital access on poverty levels, while controlling for corruption, education, and urban/rural residence. I used Claude for this section to learn about how the coefficients change in the presence of an interaction term.
+The table above presents the results of an OLS regression estimating the effects of digital access on poverty levels, while controlling for corruption, education, and urban/rural residence. I referred to Claude for guidance in this section to learn about how the coefficients change in the presence of an interaction term.
 
 -   **Digital Access (Conditional Effect):** The coefficient for digital access is negative and statistically significant (β = -0.611, p \< 0.001). However, because the model includes an interaction term between digital access and corruption, this coefficient represents the effect of digital access on poverty only when corruption is zero. Despite this conditional interpretation, it still provides a great indication as to the effect of digital infrastructure on poverty when perceived corruption levels are minimal.
 
