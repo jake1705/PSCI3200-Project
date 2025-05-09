@@ -271,7 +271,7 @@ $$
 
 There are three covariates in the regression model: corruption index, education, and urban/rural setting. I included the corruption variable because corrupt institutions can prevent infrastructure from benefiting the population. For example, a corrupt government might embezzle funds meant for public infrastructure projects, which could ultimately confound the relationship between digital access and poverty.
 
-Education functions as a potential covariate since individuals with higher levels of education are more likely to own technology (which is linked to improved economic outcomes).
+Education functions as a potential covariate since individuals with higher levels of education are more likely to own technology and have improved economic outcomes.
 
 The urban/rural covariate accounts for general differences in access to infrastructure in urban and rural settings.
 
@@ -281,7 +281,9 @@ Lastly, country fixed effects help account for unobserved heterogeneity between 
 
 **3b) Empirical Extension**
 
-One empirical extension for this project would be to restrict the data to urban respondents. Although the main model includes urban/rural residence as a covariate, it may not fully capture the substantial differences between urban and rural areas in Sub-Saharan Africa — such as infrastructure quality, access to markets, and governance capacity. This distinction is crucial because for variables like Q90i — which measures how frequently individuals use the internet — usage could either be influenced by broader internet access issues in a village (typical of a rural setting), or reflect an individual's income level.
+One empirical extension for this project would be to restrict the data to urban respondents. Although the main model includes urban/rural residence as a covariate, using subgroup analysis would help isolate the effect of the technology specifically in urban settings (rather than just controlling for urban/rural group status).
+
+This distinction is crucial because for variables like Q90i — which measures how frequently individuals use the internet — usage could either be influenced by broader internet access issues in a village (typical of a rural setting), or reflect an individual's income level. Differences that are manifested through ones location impact other variables in the model such as digital access in unique ways.
 
 By only analyzing urban respondents, this extension would help account for rural-specific factors that could confound the analysis.
 
@@ -291,7 +293,7 @@ If the regression results for this extension show a negative association between
 
 **3c) Reverse Causality Concerns**
 
-One issue with this research design is that it carries inevitable concerns regarding reverse causality. In particular, because the Afrobarometer survey data used for this project is cross-sectional and represents only a single point in time, it cannot establish a clear direction of causality.
+One issue with this research design is that it carries inevitable concerns regarding reverse causality. In particular, because the Afrobarometer survey data used for this project is cross-sectional and represents only a single point in time, it can not establish a clear direction of causality.
 
 To address this issue, I implemented several methods to isolate the effect of digital infrastructure as much as possible. For example, I included country fixed effects help control for unobserved, country-specific factors that could simultaneously influence digital access and poverty. In addition, the interaction term between digital access and corruption helps to isolate the impact of digital access on poverty by analying it's interaction with corruption.
 
@@ -357,7 +359,7 @@ gt(model_table) %>%
 
 ![](images/initial%20regression%20results.png){fig-align="center"}
 
-The table above presents the results of an OLS regression estimating the effects of digital access on poverty levels, while controlling for corruption, education, and urban/rural residence.
+The table above presents the results of an OLS regression estimating the effects of digital access on poverty levels, while controlling for corruption, education, and urban/rural residence. I used Claude for this section to learn about how the coefficients change in the presence of an interaction term.
 
 -   **Digital Access (Conditional Effect):** The coefficient for digital access is negative and statistically significant (β = -0.611, p \< 0.001). However, because the model includes an interaction term between digital access and corruption, this coefficient represents the effect of digital access on poverty only when corruption is zero. Despite this conditional interpretation, it still provides a great indication as to the effect of digital infrastructure on poverty when perceived corruption levels are minimal.
 
