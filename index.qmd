@@ -2,6 +2,6 @@
 title: "Digital Infrastructure, Poverty, and Development"
 ---
 
-Hi, I’m Jake, a senior at the University of Pennsylvania. My research explores how technology—especially digital infrastructure—impacts poverty outcomes in Sub-Saharan Africa, with a focus on the role of institutional corruption.
+Hi, I’m Jake, a senior at the University of Pennsylvania. My project explores how technology—especially digital infrastructure—impacts poverty outcomes in Sub-Saharan Africa, with a focus on the role of institutional corruption.
 
-![](images/digital africaaaa.jpg){fig-align="center"}
+![](images/digital%20africaaaa.jpg){fig-align="center"}
